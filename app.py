@@ -1,3 +1,4 @@
+
 """
 EVT VaR & Expected Shortfall — Streamlit App
 The Mountain Path - World of Finance
@@ -46,9 +47,78 @@ section[data-testid="stSidebar"] * {
     color: #e6f1ff !important;
 }
 section[data-testid="stSidebar"] .stSelectbox label,
-section[data-testid="stSidebar"] .stSlider label {
+section[data-testid="stSidebar"] .stSlider label,
+section[data-testid="stSidebar"] .stSelectSlider label {
     color: #FFD700 !important;
     font-weight: 600;
+}
+
+/* Selectbox dropdown box */
+section[data-testid="stSidebar"] .stSelectbox > div > div {
+    background-color: #1e3a5f !important;
+    border: 1.5px solid #FFD700 !important;
+    border-radius: 6px !important;
+    color: #e6f1ff !important;
+}
+section[data-testid="stSidebar"] .stSelectbox > div > div:hover {
+    border-color: #FFD700 !important;
+    background-color: #264d7a !important;
+}
+/* Selected text inside selectbox */
+section[data-testid="stSidebar"] .stSelectbox > div > div > div {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+/* Dropdown arrow icon */
+section[data-testid="stSidebar"] .stSelectbox svg {
+    fill: #FFD700 !important;
+}
+/* Dropdown option list */
+section[data-testid="stSidebar"] [data-baseweb="select"] ul,
+[data-baseweb="popover"] ul {
+    background-color: #112240 !important;
+    border: 1px solid #004d80 !important;
+}
+[data-baseweb="popover"] li {
+    background-color: #112240 !important;
+    color: #e6f1ff !important;
+}
+[data-baseweb="popover"] li:hover {
+    background-color: #1e3a5f !important;
+    color: #FFD700 !important;
+}
+/* Select slider (confidence level) */
+section[data-testid="stSidebar"] .stSelectSlider > div > div {
+    background-color: #1e3a5f !important;
+    border: 1.5px solid #FFD700 !important;
+    border-radius: 6px !important;
+}
+section[data-testid="stSidebar"] .stSelectSlider [data-baseweb="slider"] div {
+    background-color: #FFD700 !important;
+}
+/* Number/range slider track */
+section[data-testid="stSidebar"] [data-baseweb="slider"] [data-testid="stSlider"] div,
+section[data-testid="stSidebar"] [role="slider"] {
+    background-color: #FFD700 !important;
+}
+section[data-testid="stSidebar"] [data-testid="stSlider"] > div > div > div {
+    background-color: #FFD700 !important;
+}
+/* Run button */
+section[data-testid="stSidebar"] .stButton > button {
+    background: linear-gradient(135deg, #003366, #004d80) !important;
+    color: #FFD700 !important;
+    border: 1.5px solid #FFD700 !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    padding: 10px !important;
+    transition: all 0.2s !important;
+}
+section[data-testid="stSidebar"] .stButton > button:hover {
+    background: linear-gradient(135deg, #004d80, #0066cc) !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
 }
 
 /* Hero */
