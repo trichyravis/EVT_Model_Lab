@@ -237,6 +237,40 @@ section[data-testid="stSidebar"] .stButton > button:hover {
 .badge-medium { background: #fd7e14; color: #fff; padding: 3px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
 .badge-low    { background: #28a745; color: #fff; padding: 3px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
 
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: #0a1628 !important;
+    border-bottom: 2px solid #004d80 !important;
+    gap: 4px;
+}
+.stTabs [data-baseweb="tab"] {
+    background-color: #112240 !important;
+    color: #8892b0 !important;
+    border: 1px solid #1e3a5f !important;
+    border-bottom: none !important;
+    border-radius: 6px 6px 0 0 !important;
+    padding: 10px 18px !important;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: 0.88rem !important;
+    font-weight: 600 !important;
+    transition: all 0.2s !important;
+}
+.stTabs [data-baseweb="tab"]:hover {
+    background-color: #1e3a5f !important;
+    color: #e6f1ff !important;
+    border-color: #004d80 !important;
+}
+.stTabs [aria-selected="true"] {
+    background-color: #003366 !important;
+    color: #FFD700 !important;
+    border-color: #FFD700 !important;
+    border-bottom: 2px solid #003366 !important;
+}
+.stTabs [data-baseweb="tab-panel"] {
+    background-color: transparent !important;
+    padding-top: 20px !important;
+}
+
 /* Footer */
 .footer {
     background: linear-gradient(90deg, #0a1628, #003366);
